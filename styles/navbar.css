@@ -1,0 +1,51 @@
+#navbar{
+    display: flex;
+    background-color: teal;
+    margin-bottom: 5px;
+    height : 70px;
+}
+ .left{
+    width:40%;
+    display  :flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .left > img{
+    max-width: 80px;
+    height:60px
+ }
+ .left > p{
+    font-size: 22px;
+    color : blueviolet;
+    cursor: pointer;
+    font-weight: 700;
+ }
+ .right{
+    display: flex;
+    width:60%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .right > a{
+    color:purple;
+    text-decoration: none;
+    font-size: 18px;
+    padding:5px 20px;
+    background-color: white;
+    border-radius: 5px;
+ }
+
+ .right > a:hover{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    padding:5px 20px;
+    background-color: purple;
+    border-radius: 5px;
+ }
+ .right> a:active {
+background-color: yellow;
+transform: translateY(4px);
+color : purple;
+}

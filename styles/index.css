@@ -1,0 +1,40 @@
+#container{
+    box-sizing: border-box;
+    background-color: rgb(187, 227, 213);
+    min-height : 743px
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+h1{
+    color : purple;
+}
+.navbar > img{
+    width : 60px;
+    padding : 10px 0px;
+}
+#content{
+    width : 30%; 
+}
+#A{
+    margin: 30px;
+}
+#A,#U{
+    border:1px solid green;
+    background-color: tomato;
+    padding:5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+#A:hover,#U:hover{
+background-color: black;
+color : goldenrod;
+cursor: pointer;
+}
+#A:active,#U:active{
+    transform: translateY(4px);
+}

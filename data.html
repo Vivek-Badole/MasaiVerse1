@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Page</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/data.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="container">
+      <div class="navbar">
+        <img
+          src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f389.svg"
+        />
+        <h1>Masaiverse Event</h1>
+      </div>
+      <div id="input">
+        <input id ="input_search"type="text" placeholder="Search By Name.." >
+    </div>
+    <div id="filter_sort">
+        <select  id="filter">
+            <option value="novalue">Filter By Batch</option>
+            <option value="WEB-13">WEB-13</option>
+            <option value="WEB-14">WEB-14</option>
+            <option value="WEB-15">WEB-15</option>
+        </select>
+        <select  id="sort">
+            <option value="">Sort By Age</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+        </select>
+    </div>
+    <div id="editsec">
+      <span class="close">&#215;</span>
+      <div id="edit-modal">
+      </div>
+    </div>
+      <div id="content">
+      </div>
+    </div>
+    <script type="module" src="/scripts/data.js"></script>
+  </body>
+</html>

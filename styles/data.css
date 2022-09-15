@@ -1,0 +1,175 @@
+#content{
+    /* border : 1px solid green; */
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    grid-template-rows: repeat(4,480px);
+    grid-gap:20px 50px;
+    width:90%;
+    margin:0px 5% 0px 5%;
+}
+
+.card{
+    /* border : 1px solid red; */
+    padding:15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    border-radius:5px;
+    text-align: center;
+}
+.card:hover{
+    /* border : 1px solid red; */
+    padding:5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: chartreuse;
+    border-radius:5px;
+}
+.card>img{
+    width:100%;
+    height:200px;
+}
+.card > .name{
+    color : tomato;
+}
+
+.card > .age{
+    color : green;
+}
+.card > .place{
+    color : purple;
+}
+.card > .batch{
+    color : slateblue;
+}
+.card > .prof{
+    color : teal;
+}
+
+.ED{
+    display: flex;
+    justify-content: space-between;
+    margin : 0 5px 0 5px;
+    
+}
+
+.edit,.delete{
+    cursor: pointer;
+}
+
+#sort,#filter{
+    padding:5px;
+    border : 1px solid red;
+    background-color: tomato;
+    margin-bottom: 30px;
+    
+}
+
+#input{
+    max-width: 100%;
+    display : flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    padding:0px 10px;
+}
+#input>input{
+    width : 200px;
+    border:none;
+    padding:5px 15px;
+    border-right: 2px solid red;
+    margin-right:18px;
+}
+#input>input:focus{
+    outline: none;
+}
+
+
+/*MODAL SECTION*/
+#editsec{
+    display: none;
+    text-align: center;
+    z-index: 1;
+    width : 100%;
+    height : 580px;
+    margin : 0 auto 0 auto;
+    position:fixed;
+    background-color: rgb(0,0,0,0.6);
+}
+
+#edit-modal{
+    width : 28%;
+    background-color: white;
+    margin : 35px auto 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+} 
+#edit-modal>input{
+    border : 1px solid tomato;
+    width : 200px;
+    padding:5px 25px;
+    margin-top : 20px;
+
+}
+#edit-modal>input:nth-child(1){
+    margin-top: 30px;
+}
+
+
+#edit-modal>select{
+    width : 254px;
+    padding:5px 25px;
+    margin-top : 20px;
+    background-color: darkgoldenrod;
+}
+#edit-modal>button{
+    width : 175px;
+    padding:7px 20px;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    border: 1px solid yellow;
+    background-color: purple;
+    border-radius: 5px;
+    font-weight: 600;
+    color : white;
+    font-size: 15px;
+}
+
+
+#edit-modal>button:hover {
+    background-color: black;
+    color: goldenrod;
+    cursor: pointer;
+  }
+  #edit-modal>button:active {
+    transform: translateY(4px);
+  }
+  
+  .close {
+    position: fixed;
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 38px 0 0 183px;
+    z-index: 1px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width:421px) and (max-width:900px){
+    #content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (min-width:20px) and (max-width:420px){
+    #content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
