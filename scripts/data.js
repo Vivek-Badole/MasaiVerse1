@@ -75,8 +75,8 @@ async function deleteUser(id) {
     },
   });
 
-  let data = await res.json();
-  getData();
+  let data = await getDatas("https://masaiverse123321.herokuapp.com/users");
+  displayData(data);
 }
 
 //EDIT FUNCTIONALITY
